@@ -1,0 +1,12 @@
+body {
+   color: black;
+   background-color: oldlace;
+}
+
+a {
+   color: red;
+}
+
+div.idea-content a {
+   color: red;
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+
+/* Misc Stuff */
+body, html {
+   font-family: 'Playfair Display';
+}
+
+/* remove whitespace from headers */
+h1, h2, h3, h4 {
+   margin: 0px;
+   padding: 0px;
+}
+
+h4 {
+   padding: 7px 0px;
+}
+
+div.cursive {
+   font-family: 'Playfair Display';
+   font-size: 40pt;
+}
+
+div.email {
+   font-family: 'Playfair Display';
+   padding: 0px;
+   font-size: 18pt;
+   margin-top: -5px;
+}
+
+/* Make Links Not Ugly */
+a:link, a:visited, a:active {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: underline;
+}
+
+/* Formatting */
+
+#wrapper {
+   width: 80%;
+      
+   margin-left: auto;
+   margin-right: auto;
+
+   padding: 10px;
+}
+
+div.idea-block {
+   margin-bottom: 10px;
+}
+
+div.idea-head {
+   font-family: 'Playfair Display';
+   font-size: 18pt;
+
+   padding: 10px 10px 0px;
+}
+
+div.idea-content {
+   overflow: hidden;
+
+   padding: 10px 30px 15px;
+   border: solid 2pt;
+
+   font-size: 12pt;
+   font-family: 'Lato';
+}
+
+ul {
+   margin: 10px 0px;
+   padding: 0px auto;
+   list-style-type: square;
+}
+
+ul li {
+   padding: 0px 0px 5px;
+}
+
+ul ul {
+   padding: 0px auto;
+   margin: -5px 0px 5px;
+}
+
+ul ul li {
+   padding: 0px;
+}
+
+#profile_img {
+   float: right;
+   width: 500px;
+
+   border: 3px solid black;
+
+   margin: 10px 0px 10px 25px;
+}
+
+#closer {
+   text-decoration: small-caps;
+   font-size: 10px;
+   text-align: center;
+}
+
+#closer p {
+   margin: 0px;
+   padding: 0px;
+}
+
+
