@@ -1,0 +1,17 @@
+#body-container {
+  width: 100%;
+
+  display: grid | inline-grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: auto;
+
+  grid-template-areas: 'nav content';
+}
+
+#nav {
+  grid-area: nav;
+}
+
+#content {
+  grid-area: content;
+}
