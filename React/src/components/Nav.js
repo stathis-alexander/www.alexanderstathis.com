@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {withRouter} from 'react-router-dom';
 
 import NavButton from './NavButton';
 
@@ -6,8 +7,10 @@ class Nav extends Component {
   constructor(props) {
     super(props);
 
-    const path = 'about';
-
+    const path = this.props.history.location.pathname.slice(1)
+      ? this.props.history.location.pathname.slice(1)
+      : 'about';
+    console.log(this.props.history.location.pathname);
     this.state = {current: path};
 
     this.handleClicked = this.handleClicked.bind(this);
@@ -91,4 +94,4 @@ class Nav extends Component {
   }
 }
 
-export default Nav;
+export default withRouter(Nav);

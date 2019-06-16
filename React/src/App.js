@@ -1,10 +1,5 @@
 import React, {Component} from 'react';
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Route,
-  Switch,
-} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 import Header from './components/Header.js';
 import Nav from './components/Nav.js';
@@ -41,12 +36,11 @@ class App extends Component {
     return (
       <Router>
         <link rel="stylesheet" type="text/css" href={this.state.stylePath} />
-
         <Header />
         <div className="body-container">
-          <Route render={() => <Redirect to={{pathname: '/about'}} />} />
-          <Route path="/" component={Nav} />
+          <Nav />
           <Switch>
+            <Route exact path="/" component={About} />
             <Route exact path="/about" component={About} />
             <Route exact path="/professional" component={Professional} />
             <Route path="*" exact={true} component={NotFound} />
